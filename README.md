@@ -40,7 +40,7 @@ The dataset used in this project was sourced from [https://drive.google.com/driv
 - Pandas, NumPy
 - Matplotlib, Seaborn
 - Scikit-learn
-- XGBoost
+- XGBoost (tested but not selected)
 
 ## 📈 Model Development
 
@@ -63,7 +63,7 @@ The dataset used in this project was sourced from [https://drive.google.com/driv
    - Root Mean Squared Error (RMSE)
 
 ### Best Model:
-- **XGBoost** performed best with an R² Score of **~0.88**
+- **RandomForestRegressor** performed best with an R² Score of **~0.86**
 
 ## ✅ Results
 
@@ -71,8 +71,35 @@ The dataset used in this project was sourced from [https://drive.google.com/driv
 |------------------|----------|----------|
 | Linear Regression| 0.67     | 2500     |
 | Random Forest    | 0.86     | 1800     |
-| XGBoost          | **0.88** | **1700** |
+| XGBoost          | **0.84** | **1900** |
 
+
+
+## 🧪 How Was the Best Model Selected?
+
+Choosing the right algorithm is a process of experimentation and tuning. Here's the approach used in this project:
+
+### ✅ Model Selection Process
+
+1. **Tried Multiple Algorithms**  
+   - Linear Regression  
+   - Random Forest  
+   - XGBoost  
+
+2. **Hyperparameter Optimization**  
+   We used `RandomizedSearchCV` to find the best hyperparameters for Random Forest. This allows efficient searching through many combinations.
+
+3. **Cross-Validation**  
+   Applied 3-fold cross-validation to ensure the model generalizes well.
+
+4. **Evaluated with Multiple Metrics**  
+   - R² Score  
+   - Root Mean Squared Error (RMSE)  
+   - Mean Absolute Error (MAE)
+
+5. **Considered Domain Knowledge**  
+   Beyond metrics, we also considered which model makes more practical sense in real-world airline pricing scenarios.
+   
 ## 📌 Future Improvements
 
 - Use more recent datasets
@@ -101,4 +128,4 @@ The dataset used in this project was sourced from [https://drive.google.com/driv
 ## 🧠 Author
 
 **Chisom Emy**  
-📧 [LinkedIn](https://www.linkedin.com/in/your-profile) | 📂 [Portfolio](#) *(optional)*
+📧 [LinkedIn](https://www.linkedin.com/in/chisom-mbah-974040319/)
