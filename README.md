@@ -25,7 +25,7 @@ Airline ticket prices can vary significantly based on multiple factors. The goal
 
 ## 📊 Dataset
 
-The dataset used in this project was sourced from [Kaggle](https://www.kaggle.com/datasets/), and includes domestic flight information such as:
+The dataset used in this project was sourced from [https://drive.google.com/drive/folders/1QPizxIdGZ7TA9ecSGjDxJFLYNUOC8Kn9), and includes domestic flight information such as:
 
 - `Airline`
 - `Date_of_Journey`
